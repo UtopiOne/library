@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <script defer src="scripts/script.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form class="grid grid-rows-2 grid-cols-3 bg-slate-400">
+      <input
+        class="bg-slate-500 rounded-xl p-3 m-3 shadow-xl"
+        type="text"
+        id="author"
+        placeholder="author"
+      />
+      <input
+        class="bg-slate-500 rounded-xl p-3 m-3 shadow-xl"
+        type="text"
+        id="title"
+        placeholder="title"
+      />
+      <input
+        class="bg-slate-500 rounded-xl p-3 m-3 shadow-xl"
+        type="text"
+        id="amount-of-pages"
+        placeholder="amount of pages"
+      />
+      <button
+        class="bg-slate-900 text-slate-50 rounded-xl shadow-xl p-3 m-3 col-span-3"
+        type="button"
+        id="submit-button"
+        onclick="addBookToLibrary(myLibrary)"
+      >
+        Submit
+      </button>
+    </form>
+
+    <div class="book-table"></div>
+  </body>
+</html>
